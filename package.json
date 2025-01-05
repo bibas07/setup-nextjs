@@ -1,9 +1,8 @@
 {
-  "name": "setup-nextjs",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "turbo run build --filter=@setup-nextjs/web",
+    "dev": "turbo run dev --filter=@setup-nextjs/web",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
